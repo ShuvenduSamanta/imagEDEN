@@ -13,7 +13,7 @@ function App() {
      You can also pass this value using a client_id query parameter:
     https://api.unsplash.com?client_id=YOUR_ACCESS_KEY */
   const fetchImages = ()=> {
-    fetch(`https://api.unsplash.com/search/photos?client_id=KWt8VFNasCHXtU4cwuuouYa0PszwAU_IMcJiqKla1CU&query=${value}`)
+    fetch(`https://api.unsplash.com/search/photos?client_id=KWt8VFNasCHXtU4cwuuouYa0PszwAU_IMcJiqKla1CU&query=${value}&orientation=portrait`)
     .then(res=>res.json())
     .then(data=>{
       //console.log(data)
@@ -29,16 +29,15 @@ function App() {
           type="text" 
           value={value} 
           onChange={(e)=>setValue(e.target.value)}/>
-        <button onClick={()=> fetchImages()}>send</button>
-
-        <div className="imgden">
+        <button onClick={()=> fetchImages()}>Find</button>
+      </div>
+      <div className="imgden">
           {
             results.map((item)=>{
-              return <img key={item.id} src={item.urls.regular}/>
+              return <img className="imgItem" key={item.id} src={item.urls.regular}/>
             })
           }
         </div>
-      </div>
     </div>
   );
 }
