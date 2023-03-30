@@ -1,9 +1,10 @@
- import React,{useState} from "react";
+ import React,{useState,useEffect} from 'react';
  import './App.css';
 
 function App() {
   const [value,setValue] = useState("") 
   const [results, setResults] = useState([])
+  const [dark,setMode] = useState(false)
   //KWt8VFNasCHXtU4cwuuouYa0PszwAU_IMcJiqKla1CU
   //url request-https://api.unsplash.com/
   //request route for images-GET /search/photos
@@ -22,6 +23,14 @@ function App() {
   }
   return (
     <div className="App">
+      <div className="btn-container">
+        <i class="fa fa-sun-o" aria-hidden="true"></i>
+        <label className="switch btn-color-mode-switch">
+              <input type="checkbox" onChange={()=>setMode(!dark)} name="color_mode" id="color_mode" value="1"/>
+              <label for="color_mode" data-on="Dark" data-off="Light" className="btn-color-mode-switch-inner"></label>
+          </label>
+        <i className="fa fa-moon-o" aria-hidden="true"></i>
+      </div>
       <div className="mydiv">
         <span>Search:</span>
         <input
@@ -38,6 +47,7 @@ function App() {
             })
           }
         </div>
+        
     </div>
   );
 }
