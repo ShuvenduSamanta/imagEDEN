@@ -2,6 +2,16 @@
 .App {
   text-align: center;
 }
+/*MODE*/
+
+/*dark mode*/
+
+.dark-mode{
+  background: #111;
+  color: #E0E0E0;
+}
+
+
 
 .mydiv{
   display: flex;
@@ -132,8 +142,4 @@ label {
 .btn-color-mode-switch input[type="checkbox"]:checked ~ .alert{
   display: block;
 }
-
-/*MODE*/
-
-/*dark mode*/
 
