@@ -34,13 +34,13 @@ function App() {
         <i className="fa fa-moon-o" aria-hidden="true"></i>
       </div>
       <div className={dark ? "mydiv dark-mode" : "mydiv"}>
-        <span>Search:</span>
-        <input
+        <span>Search :</span>
+        <input className={dark ? "input dark-mode":"input"}
           style={{width: '60%'}}
           type="text" 
           value={value} 
           onChange={(e)=>setValue(e.target.value)}/>
-        <button onClick={()=> fetchImages()}>Find</button>
+        <button className={dark ? "button dark-mode" : "button"}onClick={()=> fetchImages()}>Find</button>
       </div>
       <div className={dark ? "imgden dark-mode" : "imgden"}>
           {
