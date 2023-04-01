@@ -1,16 +1,18 @@
 
 .App {
   text-align: center;
-  background: #efefef;
-  margin-top: -10px;
-  padding: 18px;
+  background: #f1f1f1;
+  height: 100vh;
+}
+nav{
+  padding: 10px;
 }
 /*MODE*/
 
 /*dark mode*/
 
 .dark-mode{
-  background: #2b2b2b;
+  background: #292929;
   color: #ffffff;
 }
 

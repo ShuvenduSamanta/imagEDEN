@@ -22,8 +22,9 @@ function App() {
     })
   }
   return (
-    <div className={dark ? "App dark-mode":"App"}>
-      <div className="btn-container">
+    <div className={dark ? "App dark-mode":"App"}> 
+    <nav>
+      <div className="btn-container">                 
         <i class="fa fa-sun-o" aria-hidden="true"></i>
         <label className="switch btn-color-mode-switch">
               <input type="checkbox" 
@@ -35,21 +36,22 @@ function App() {
       </div>
       <div className={dark ? "mydiv dark-mode" : "mydiv"}>
         <span>Search :</span>
-        <input className={dark ? "input dark-mode":"input"}
+        <input className={dark ? "input dark-mode":"input"} //*searchInput
           style={{width: '60%'}}
           type="text" 
           value={value} 
           onChange={(e)=>setValue(e.target.value)}/>
-        <button className={dark ? "button dark-mode" : "button"}onClick={()=> fetchImages()}>Find</button>
+        <button className={dark ? "button dark-mode" : "button"} //*searchBtn
+          onClick={()=> fetchImages()}>Find</button>
       </div>
       <div className={dark ? "imgden dark-mode" : "imgden"}>
           {
             results.map((item)=>{
-              return <img className="imgItem" key={item.id} src={item.urls.regular}/>
+              return <img className="imgItem" key={item.id} src={item.urls.regular}/> 
             })
           }
         </div>
-        
+      </nav>
     </div>
   );
 }
