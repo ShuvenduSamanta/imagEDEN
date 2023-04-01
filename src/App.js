@@ -14,7 +14,7 @@ function App() {
      You can also pass this value using a client_id query parameter:
     https://api.unsplash.com?client_id=YOUR_ACCESS_KEY */
   const fetchImages = ()=> {
-    fetch(`https://api.unsplash.com/search/photos?client_id=KWt8VFNasCHXtU4cwuuouYa0PszwAU_IMcJiqKla1CU&query=${value}&orientation=portrait`)
+    fetch(`https://api.unsplash.com/search/photos?client_id=KWt8VFNasCHXtU4cwuuouYa0PszwAU_IMcJiqKla1CU&query=${value}&orientation=squarish`)
     .then(res=>res.json())
     .then(data=>{
       //console.log(data)

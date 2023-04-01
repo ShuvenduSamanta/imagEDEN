@@ -64,15 +64,19 @@ nav{
   color: rgb(0, 0, 0);
 }
 .imgden{
+  padding: 25px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  row-gap: 2.2em;
 }
 
 .imgItem{
   width: 30%;
   margin: 2px;
   margin-top: 5px;
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 15px;
 }
 
 /*switch*/
