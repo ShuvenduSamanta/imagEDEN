@@ -14,8 +14,11 @@ nav{
 .dark-mode{
   background: #292929;
   color: #ffffff;
+  height: auto;
 }
-
+.nav.dark-mode{
+  background: #292929;
+}
 
 
 .mydiv{
