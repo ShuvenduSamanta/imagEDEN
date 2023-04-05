@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/imageden/static/css/main.3e617443.css",
+    "main.js": "/imageden/static/js/main.ab108666.js",
+    "static/js/787.f9d98c11.chunk.js": "/imageden/static/js/787.f9d98c11.chunk.js",
+    "index.html": "/imageden/index.html",
+    "main.3e617443.css.map": "/imageden/static/css/main.3e617443.css.map",
+    "main.ab108666.js.map": "/imageden/static/js/main.ab108666.js.map",
+    "787.f9d98c11.chunk.js.map": "/imageden/static/js/787.f9d98c11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e617443.css",
+    "static/js/main.ab108666.js"
+  ]
+}
