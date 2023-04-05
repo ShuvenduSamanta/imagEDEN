@@ -40,6 +40,7 @@ function App() {
       <input className={dark ? "input dark-mode" : "input"} //*searchInput
         style={{ width: '60%' }}
         type="text"
+        placeholder='Search high-resolution images...'
         value={value}
         onChange={(e) => setValue(e.target.value)} />
       <button className={dark ? "button dark-mode" : "button"} //*searchBtn
