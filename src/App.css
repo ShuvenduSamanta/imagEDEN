@@ -3,10 +3,12 @@
   text-align: center;
   background: #f1f1f1;
   height: 100vh;
+  padding-top: 10px;
 }
-nav{
-  padding: 10px;
+.App.dark-mode{
+  height: 1330px;
 }
+
 /*MODE*/
 
 /*dark mode*/
@@ -16,10 +18,6 @@ nav{
   color: #ffffff;
   height: auto;
 }
-.nav.dark-mode{
-  background: #292929;
-}
-
 
 .mydiv{
   display: flex;
