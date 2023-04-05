@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/imagEDEN/static/css/main.3e617443.css",
-    "main.js": "/imagEDEN/static/js/main.60a33b73.js",
+    "main.js": "/imagEDEN/static/js/main.3082e75a.js",
     "static/js/787.f9d98c11.chunk.js": "/imagEDEN/static/js/787.f9d98c11.chunk.js",
     "index.html": "/imagEDEN/index.html",
     "main.3e617443.css.map": "/imagEDEN/static/css/main.3e617443.css.map",
-    "main.60a33b73.js.map": "/imagEDEN/static/js/main.60a33b73.js.map",
+    "main.3082e75a.js.map": "/imagEDEN/static/js/main.3082e75a.js.map",
     "787.f9d98c11.chunk.js.map": "/imagEDEN/static/js/787.f9d98c11.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3e617443.css",
-    "static/js/main.60a33b73.js"
+    "static/js/main.3082e75a.js"
   ]
 }
